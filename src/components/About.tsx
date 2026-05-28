@@ -56,10 +56,7 @@ export default function About({ isActive }: { isActive: boolean }) {
               UI Developer & Designer based in <span className="text-purple-400">Bangalore, India</span>
             </h3>
             <p className="text-gray-400 text-lg leading-relaxed mb-8">
-              Hi! I'm Sachin, a passionate UI Developer & Designer with over 8 years of
-              experience in creating beautiful and functional user interfaces. I specialize
-              in crafting pixel-perfect designs and translating them into responsive,
-              performant web applications. Currently working at Mphasis, where I bring creative visions to life.
+             Hi! I'm Sachin, a passionate ReactJS Developer and Front-End Engineer with over 8 years of experience in building scalable, high-performance web applications and seamless API-driven solutions. I specialize in ReactJS, JavaScript, microfrontend architecture, and end-to-end application development, with a strong focus on responsive UI implementation, API integration, performance optimization, and modern user experiences. Currently working at Mphasis.
             </p>
 
             <div className="grid grid-cols-2 gap-4">

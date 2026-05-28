@@ -63,7 +63,7 @@ export default function Contact({ isActive }: { isActive: boolean }) {
 
             <div className="space-y-5">
               {[
-                { icon: Mail, label: 'Email', value: 'sachinsagar5@gmail.com', gradient: 'from-purple-600 to-purple-700' },
+                { icon: Mail, label: 'Email', value: 'sachisagar68@gmail.com', gradient: 'from-purple-600 to-purple-700' },
                 { icon: MapPin, label: 'Location', value: 'Bangalore, India', gradient: 'from-cyan-600 to-cyan-700' },
               ].map((item) => (
                 <div key={item.label} className="flex items-center gap-4 group">
