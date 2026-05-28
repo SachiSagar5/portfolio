@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
 import { ExternalLink, ArrowUpRight, Folder } from 'lucide-react';
+import { imagePath } from '../utils/imagePath';
 
 function GithubIcon({ className }: { className?: string }) {
   return (
@@ -73,7 +74,7 @@ function ProjectCard({
       <div className="relative bg-gray-900/80 backdrop-blur-sm border border-gray-800 rounded-2xl overflow-hidden hover:border-gray-700 transition-all duration-500">
         <div className="relative h-40 overflow-hidden">
           <img
-            src={project.image}
+            src={imagePath(project.image)}
             alt={project.title}
             className={`w-full h-full object-cover transition-all duration-700 ${isHovered ? 'scale-110 blur-[1px]' : 'scale-100'}`}
           />

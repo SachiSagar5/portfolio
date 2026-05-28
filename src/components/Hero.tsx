@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react';
 import { Sparkles } from 'lucide-react';
+import { imagePath } from '../utils/imagePath';
 
 const roles = ['UI Developer', 'Web Designer', 'Frontend Engineer', 'Creative Thinker'];
 
@@ -50,7 +51,7 @@ export default function Hero({ isActive }: { isActive: boolean }) {
     <div className="relative w-full h-full flex items-center justify-center overflow-hidden">
       {/* Background */}
       <div className="absolute inset-0">
-        <img src="/images/hero-bg.jpg" alt="" className="w-full h-full object-cover scale-110" />
+        <img src={imagePath('/images/hero-bg.jpg')} alt="" className="w-full h-full object-cover scale-110" />
         <div className="absolute inset-0 bg-gradient-to-b from-gray-950/80 via-gray-950/60 to-gray-950" />
         <div className="absolute inset-0 bg-gradient-to-r from-purple-950/30 via-transparent to-cyan-950/30" />
       </div>

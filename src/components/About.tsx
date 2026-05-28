@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react';
 import { MapPin, Briefcase, Code, Palette } from 'lucide-react';
+import { imagePath } from '../utils/imagePath';
 
 const highlights = [
   { icon: Code, label: 'UI Development', desc: '8+ Years Experience' },
@@ -40,7 +41,7 @@ export default function About({ isActive }: { isActive: boolean }) {
             <div className="relative group max-w-md mx-auto">
               <div className="absolute -inset-1 bg-gradient-to-r from-purple-600 to-cyan-600 rounded-2xl blur-lg opacity-30 group-hover:opacity-50 transition-opacity duration-500" />
               <div className="relative overflow-hidden rounded-2xl">
-                <img src="/images/profile.jpg" alt="Sachin Sagar" className="w-full aspect-square object-cover group-hover:scale-105 transition-transform duration-700" />
+                <img src={imagePath('/images/profile.jpg')} alt="Sachin Sagar" className="w-full aspect-square object-cover group-hover:scale-105 transition-transform duration-700" />
                 <div className="absolute inset-0 bg-gradient-to-t from-gray-950/60 to-transparent" />
               </div>
               <div className="absolute -bottom-4 -right-4 bg-gradient-to-r from-purple-600 to-cyan-600 text-white px-6 py-3 rounded-xl shadow-xl">
